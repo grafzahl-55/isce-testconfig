@@ -22,7 +22,7 @@ Testbeispiel - 1
    </bean>
 
     <bean id="exampleBean" class="de.escriba.isce.experimental.ExampleBean"
-          p:name-ref="s2"/>
+          p:name="#{ps['greeting']}"/>
 
 
 </beans>

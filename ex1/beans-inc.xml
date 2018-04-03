@@ -19,4 +19,12 @@ Testbeispiel - 1
        <constructor-arg index="0" value="Hallo Berlin"/>
    </bean>
 
+    <bean id="ps" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="greeting" value="Hallo Berlin"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
 </beans>
