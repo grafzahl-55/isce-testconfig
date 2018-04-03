@@ -15,8 +15,14 @@ Testbeispiel - 1
           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
 ">
+   <import resource="beans-inc.xml"/>
+
    <bean id="s1" class="java.lang.String">
        <constructor-arg index="0" value="Hallo Welt"/>
    </bean>
+
+    <bean id="exampleBean" class="de.escriba.isce.experimental.ExampleBean"
+          p:name-ref="s2"/>
+
 
 </beans>
